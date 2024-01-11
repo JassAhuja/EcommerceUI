@@ -1,0 +1,19 @@
+<div class="auth-container">
+  <h2>{{ isSignIn ? 'Sign In' : 'Sign Up' }}</h2>
+  <form [formGroup]="authForm" (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="email" />
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" formControlName="password" />
+    </div>
+    <div *ngIf="!isSignIn" class="form-group">
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" formControlName="confirmPassword" />
+    </div>
+    <button type="submit">{{ isSignIn ? 'Sign In' : 'Sign Up' }}</button>
+    <p (click)="toggleFormMode()">{{ isSignIn ? 'Don\'t have an account? Sign Up' : 'Already have an account? Sign In' }}</p>
+  </form>
+</div>

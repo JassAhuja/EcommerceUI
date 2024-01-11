@@ -1,0 +1,53 @@
+.auth-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 2px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+p {
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  margin-top: 15px;
+}
+
+p:hover {
+  text-decoration: underline;
+}
